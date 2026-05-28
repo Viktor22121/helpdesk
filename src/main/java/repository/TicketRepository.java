@@ -8,9 +8,9 @@ import java.util.List;
 
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
 
-    // Получить все заявки, отсортированные по дате (новые сначала)
+
     List<Ticket> findAllByOrderByCreatedAtDesc();
 
-    // Найти заявки по статусу
+
     List<Ticket> findByStatus(TicketStatus status);
 }

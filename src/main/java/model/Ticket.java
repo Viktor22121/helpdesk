@@ -36,11 +36,11 @@ public class Ticket {
     @Column(nullable = false, length = 100)
     private String customerName;
 
-    // Пустой конструктор для JPA
+
     public Ticket() {
     }
 
-    // Конструктор с параметрами
+
     public Ticket(String title, String description,
                   TicketStatus status, String customerName) {
         this.title = title;
@@ -49,7 +49,7 @@ public class Ticket {
         this.customerName = customerName;
     }
 
-    // Установка даты создания перед сохранением
+
     @PrePersist
     public void onCreate() {
         if (createdAt == null) {
@@ -60,7 +60,7 @@ public class Ticket {
         }
     }
 
-    // Getters и Setters
+
     public Long getId() { return id; }
 
     public String getTitle() { return title; }

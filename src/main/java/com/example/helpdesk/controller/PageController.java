@@ -1,7 +1,6 @@
-package com.example.helpdesk.controller; // ← ВАЖНО: пакет должен совпадать с расположением файла!
-
+package com.example.helpdesk.controller;
 import java.util.List;
-import org.springframework.stereotype.Controller; // ← Не RestController!
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
